@@ -20,7 +20,7 @@ using namespace std;
 #define inf             1e18
 #define ps(x,y)         fixed<<setprecision(y)<<x
 
-const int MOD = 1000000007;
+const int mod = 1000000007;
 
 int main()
 {
@@ -46,7 +46,7 @@ int main()
             }
         }
     }
-    cout<<dp[x]%MOD<<endl;
+    cout<<dp[x]%mod<<endl;
 
 
     return 0;

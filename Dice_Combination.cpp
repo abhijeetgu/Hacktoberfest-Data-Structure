@@ -19,7 +19,7 @@ using namespace std;
 #define PI 3.1415926535897932384626
 #define inf             1e18
 #define ps(x,y)         fixed<<setprecision(y)<<x
-const int MOD = 1000000007;
+const int mod = 1000000007;
 
 int main()
 {
@@ -38,7 +38,7 @@ int main()
             dp[i] += dp[i-j]%MOD;
         }
     }
-    cout<<dp[n]%MOD<<endl;
+    cout<<dp[n]%mod<<endl;
 
 
     return 0;

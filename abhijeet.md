@@ -56,7 +56,7 @@ int main()
             if(t1 && t2)
                 cnt++;
         }
-        cout<<cnt<<endl;
+        cout<<cnt<<"\n";
     }
     return 0;
 }

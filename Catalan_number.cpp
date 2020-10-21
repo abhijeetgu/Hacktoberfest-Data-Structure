@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 int dp[1000];
-int catalanBST(int n)
+int CatalanBST(int n)
 {
     if(n==0)
     {
@@ -12,7 +12,7 @@ int catalanBST(int n)
     int ans=0;
     for(int i =1;i<=n;i++)
     {
-       ans += catalanBST(i-1)*catalanBST(n-i);
+       ans += CatalanBST(i-1)*CatalanBST(n-i);
     }
     dp[n] =ans;
     return ans;
@@ -28,7 +28,7 @@ int main()
     //cout<<catalanBST(n);
     for(int i=0;i<=n;i++)
     {
-        cout<<catalanBST(i)<<" ";
+        cout<<CatalanBST(i)<<" ";
     }
     return 0;
 
